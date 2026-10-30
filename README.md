@@ -8,7 +8,7 @@ Linux and macOS support amd64 and arm64; Windows supports amd64 where the releas
 
 ```yaml
 - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-- uses: datatug/setup-datatug@51c9a9bbf23bbcd8e49eb975b94680b7b1159c10
+- uses: datatug/setup-datatug@f2133005854495a293d90cb684e01b27a91c2c5c
   with:
     version: v0.131.0
 - run: datatug --version
