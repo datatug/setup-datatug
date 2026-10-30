@@ -26,6 +26,10 @@ jobs:
           if ($env:RESULT_VERSION -ne 'v0.131.0') { throw 'wrong output version' }
           $path = (Get-Command datatug).Source
           if (-not $path.StartsWith($env:RUNNER_TEMP, [StringComparison]::OrdinalIgnoreCase)) { throw "unexpected binary: $path" }
+          $installDir = Split-Path $path
+          foreach ($notice in @('LICENSE', 'THIRD_PARTY_NOTICES.md', 'LICENSES/Apache-2.0.txt', 'LICENSES/COMMERCIAL-TERMS.md')) {
+            if (-not (Test-Path (Join-Path $installDir $notice))) { throw "missing release notice: $notice" }
+          }
           $reported = & datatug --version
           if ($LASTEXITCODE -ne 0 -or $reported -notmatch '(^|[^0-9])0\.131\.0([^0-9]|$)') { throw "wrong binary version: $reported" }
       - id: wrong_digest
