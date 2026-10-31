@@ -1,6 +1,6 @@
 # setup-datatug
 
-[![Watch the DataTug product video](assets/product-video.webp)](https://youtu.be/tjOzdzB_PGA)
+[![Watch the DataTug product video](assets/product-video-play.svg)](https://youtu.be/tjOzdzB_PGA)
 
 [Watch the DataTug product video](https://youtu.be/tjOzdzB_PGA)
 
