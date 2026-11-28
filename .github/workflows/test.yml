@@ -6,7 +6,7 @@ on:
 permissions:
   contents: read
 env:
-  DATATUG_VERSION: v0.158.5
+  DATATUG_VERSION: v0.160.3
 jobs:
   test:
     strategy:
