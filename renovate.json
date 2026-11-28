@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "config:recommended"
-  ],
+  "extends": ["github>dal-go/dalgo-renovate-config"],
   "automerge": false,
   "automergeType": "pr",
   "platformAutomerge": true,
